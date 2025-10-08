@@ -16,6 +16,12 @@ return	factorial(n)/(factorial(n-r)*factorial(r));
 	
 }
 int main(void){
-	printf("result is %d",combination(5,4));
+	int n,r;
+	int multi;
+	printf("Input n and r:");
+	scanf("%d %d", &n,&r);
+	multi=combination(n,r);
+
+	printf("result is %d",multi);
 }
 
