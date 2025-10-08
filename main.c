@@ -2,15 +2,20 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-int square(int a)
-{
-	return(a*a);
- } 
- int main()
- {
- 	int a=2;
- 	a=square(a);
- 	printf("a=%i\n",a);
- 	return 0;
- }
+int factorial(int n){
+	int i, multi=1;
+	for(i=1;i<=n;i++){
+		multi=multi*i;		
+	}
+	return multi;
+} 
+
+int combination(int n,int r){
+	
+return	factorial(n)/(factorial(n-r)*factorial(r));
+	
+}
+int main(void){
+	printf("result is %d",combination(5,4));
+}
 
